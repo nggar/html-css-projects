@@ -210,8 +210,8 @@ body {
     transition: all .5; }
     @media only screen and (max-width: 37.5em) {
       .header__nav-link:link, .header__nav-link:visited {
-        font-size: 3rem;
-        font-weight: 500;
+        font-size: 2.4rem;
+        font-weight: 400;
         color: white; } }
     .header__nav-link:link:hover, .header__nav-link:link:active, .header__nav-link:visited:hover, .header__nav-link:visited:active {
       color: #85bc45; }
