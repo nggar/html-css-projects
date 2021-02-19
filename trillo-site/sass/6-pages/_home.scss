@@ -1,0 +1,23 @@
+.container {
+        max-width: 120rem;
+        margin: 8rem auto;
+        background-color: $grey-light-2;
+        box-shadow: $shadow-dark;
+
+        min-height: 50rem;
+
+        @include respond (bp-largest) {
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+        }
+}
+
+/* CONTENT */
+.content {
+        display: flex;
+        
+        @include respond (bp-med) {
+                flex-direction: column;
+        }
+}

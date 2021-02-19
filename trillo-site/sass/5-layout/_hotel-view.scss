@@ -1,0 +1,17 @@
+/* HOTEL VIEW */
+
+.hotel-view {
+        background-color: $white;
+
+        flex: 1; // set to take the full available space.
+}
+
+/* gallery */
+.gallery {
+        display: flex;
+
+        &__photo {
+                width: 100%;
+                display: block;
+        }
+}

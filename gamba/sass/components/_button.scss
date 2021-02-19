@@ -1,0 +1,43 @@
+.btn {
+    height: 4rem;
+    width: 20rem;
+    border-radius: 20rem;
+    border: none;
+    outline: none;
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.3);
+    transition: all .3s;
+
+    @include respond (phone) {
+        font-size: 1.6rem;
+    }
+
+    &-green {
+        background-color: $color-green-1;
+        color: $white;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-.2rem);
+        background-color: $color-green-2;
+        box-shadow: 0 .6rem 1.2rem rgba($black, 0.3);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 .3rem .6rem rgba($black, 0.3);
+    }
+}
+
+.btn-text {
+    color: $black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+
+    @include respond (tab-port) {
+        font-size: 1.2rem;
+    }
+}

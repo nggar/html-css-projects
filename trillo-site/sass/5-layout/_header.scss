@@ -1,0 +1,22 @@
+.header {
+        font-size: $size-2;
+        height: 7rem;
+        background-color: $white;
+        border-bottom: $line;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond (bp-smaller) {
+                flex-wrap: wrap;
+                height: 10rem;
+                align-content: space-around;
+        }
+}
+
+/* logo */
+.logo {
+        height: 3.25rem;
+        margin-left: 2rem;
+}

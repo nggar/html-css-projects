@@ -1,0 +1,104 @@
+/* overview */
+.overview {
+
+        border-bottom: $line;
+
+        display: flex;
+        align-items: center;
+
+        &__heading {
+                font-size: $size-3;
+                font-weight: $med-font;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 1.5rem 3rem;
+
+                @include respond (bp-small) {
+                        font-size: 1.6rem;
+                        padding: 1.2rem 2rem;
+                }
+
+                @include respond (bp-smaller) {
+                        font-size: $size-1;
+                        padding: 1rem 2rem;
+                        letter-spacing: 0;
+                }
+        }
+
+        &__stars {
+                margin-right: auto; // useful margin trick
+
+                display: flex;
+        }
+
+        &__icon-star,
+        &__icon-location {
+                width: $icon-1;
+                height: $icon-1;
+                fill: $primary;
+
+                @include respond (bp-smaller) {
+                        width: 1rem;
+                        height: 1rem;
+                }
+        }
+
+        &__location {
+                font-size: $size-1;
+                display: flex;
+                align-items: center;
+
+                @include respond (bp-smaller) {
+                        font-size: 1rem;
+                }
+        }
+        &__icon-location {
+                margin-right: .5rem;
+
+                @include respond (bp-smaller) {
+                        margin-right: .2rem;
+                }
+        }
+
+        &__rating {
+                background-color: $primary;
+                margin-left: 3rem;
+                color: $white;
+                padding: 0 2.25rem;
+                align-self: stretch;
+                text-align: center;
+
+                @include respond (bp-small) {
+                        padding: 0 1.5rem;
+                }
+
+                @include respond (bp-smaller) {
+                        padding: 0 1rem;
+                }
+
+                @include flexCenter;
+                flex-direction: column;
+        }
+        &__rating-average {
+                font-size: $size-3;
+                font-weight: $med-font;
+                margin-bottom: -3px;
+
+                @include respond (bp-small) {
+                        font-size: 1.6rem;
+                }
+
+                @include respond (bp-smaller) {
+                        font-size: $size-1;
+                }
+        }
+        &__rating-count {
+                font-size: $size-0;
+                text-transform: uppercase;
+
+                @include respond (bp-smaller) {
+                        font-size: .4rem;
+                }
+        }
+
+}

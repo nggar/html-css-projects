@@ -1,0 +1,141 @@
+.deal {
+      grid-column: center-start / center-end;
+
+      display: grid;
+      grid-template-columns: repeat(3, minmax(min-content, 1fr));
+      grid-template-rows: min-content min-content 30rem;
+      grid-gap: 3rem;
+
+      margin-bottom: 2rem;
+
+      @include respond (tab-port) {
+            grid-template-columns: repeat(6, minmax(min-content, 1fr));
+      }
+      @include respond (phone) {
+            grid-gap: 2rem;
+      }
+
+      align-items: center;
+      justify-items: center;
+
+      // Deal Today
+      &__heading {
+            font-size: 6rem;
+            grid-column: 1 / -1;
+      }
+
+      // Deal Product
+      &__info {
+
+            @include respond (tab-port) {
+                  grid-column: 5 / 7;
+            }
+
+            @include respond (phone) {
+                  grid-column: 1 / -1;
+                  grid-row: 2 / 3;
+                  text-align: center;
+                  margin-bottom: 2rem;
+            }
+
+            &__heading {
+                  font-size: 4rem;
+
+                  @include respond (tab-port) {
+                        font-size: 3rem;
+                  }
+            }
+            
+            // Price Text
+            &__price {
+                  font-size: 2rem;
+                  font-weight: 300;
+                  color: rgba($black, .3);
+
+                  // Product Price
+                  span {
+                        margin-left: 1rem;
+                        font-size: 2.5rem;
+                        font-weight: 500;
+                        color: $color-green-1;
+                  }
+            }
+
+            // Product Description
+            &__description {
+                  font-size: 1.7rem;
+                  color: rgba($black, .6);
+
+                  // Bullet points of product 
+
+                  &-points {
+                        
+                        li {
+                              margin-left: 2.5rem;
+                              list-style-position: inside;
+                        }
+                        
+                        li:not(:last-child) {
+                              margin-bottom: 1rem;
+                        }
+                  }
+            }
+      }
+
+      // Overall image style
+      &__img,
+      &__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+      }
+
+      // Basket of vegetables
+      &__img--main {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+            object-fit: contain;
+
+            @include respond (tab-port) {
+                  grid-column: 1 / 5;
+            }
+
+            @include respond (phone) {
+                  grid-column: 1 / -1;
+                  grid-row: 3 / 4;
+            }
+      }
+
+      &__img--1 {
+            border-radius: .3rem;
+            grid-column: 1 / 2;
+
+            @include respond (tab-port) {
+                  grid-column: 1 / 4;
+            }
+
+            @include respond (phone) {
+                  display: none;
+            }
+      }
+      &__img--2 {
+            border-radius: .3rem;
+            grid-column: 2 / 3;
+
+            @include respond (tab-port) {
+                  display: none;
+            }
+      }
+      &__img--3 {
+            border-radius: .3rem;
+            grid-column: 3 / 4;
+
+            @include respond (tab-port) {
+                  grid-column: 4 / 7;
+            }
+
+            @include respond (phone) {
+                  display: none;
+            }
+      }
+}

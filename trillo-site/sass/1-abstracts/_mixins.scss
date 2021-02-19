@@ -1,0 +1,32 @@
+@mixin flexCenter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+
+/* Media queries */
+
+@mixin respond ($breakpoint) {
+        @if $breakpoint == bp-largest {
+                @media only screen and (max-width: 75em) { @content };
+        }
+
+        @if $breakpoint == bp-large {
+                @media only screen and (max-width: 68.75em) { @content };
+        }
+
+        @if $breakpoint == bp-med {
+                @media only screen and (max-width: 56.25em) { @content };
+        }
+
+        @if $breakpoint == bp-small {
+                @media only screen and (max-width: 37.5em ) { @content };
+        }
+
+        @if $breakpoint == bp-smaller {
+                @media only screen and (max-width: 28.125em) { @content }; 
+        }
+}
+
+

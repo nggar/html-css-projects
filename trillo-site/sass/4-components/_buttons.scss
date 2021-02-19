@@ -1,0 +1,110 @@
+.btn-inline {
+        border: none;
+        color: $primary;
+        font-size: inherit;
+        border-bottom: 1px solid currentColor;
+        padding-bottom: 2px;
+        display: inline-block;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all .3s;
+
+        & span {
+                margin-left: 1px;
+                transition: margin-left .3s;
+        }
+
+        &:hover {
+                color: $grey-dark-1;
+
+                & span {
+                        margin-left: 5px;
+                }
+        }
+        
+        &:focus {
+                outline: none;
+                animation: pulsate 1s infinite;
+        }
+}
+
+/* CTA */
+.cta {
+        padding: 3.5rem 0;
+        text-align: center;
+
+        @include respond (bp-med) {
+                padding: 2.5rem 0;
+        }
+
+        &__book-now {
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: $light-font;
+                margin-bottom: 2.5rem;
+
+                @include respond (bp-small) {
+                        font-size: 1.8rem;
+                }
+        }
+}
+
+.btn {
+        font-size: 1.5rem;
+        border: none;
+        text-transform: uppercase;
+        font-weight: $light-font;
+        border-radius: 100px;
+        background-image: linear-gradient(to right, $primary-light, $primary-dark);
+        color: $white;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        @include respond (bp-small) {
+                font-size: $size-2;
+        }
+
+        & > * {
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                transition: all .3s;
+        }
+        &__visible {
+                padding: 1.7rem 7rem;
+
+                @include respond (bp-small) {
+                        padding: 1.3rem 6rem;
+                }
+        }
+
+        &__invisible {
+                position: absolute;
+                left: 0;
+                top: -100%;
+                padding: 1.7rem 0;
+
+                @include respond (bp-small) {
+                        padding: 1.3rem 0;
+                }
+        }
+
+        &:hover {
+                background-image: linear-gradient(to left, $primary-light, $primary-dark);
+        }
+
+        &:hover &__visible {
+                transform: translateY(100%);
+
+        }
+
+        &:hover &__invisible {
+                top: 0;
+        }
+
+        &:focus {
+                outline: none;
+                animation: pulsate 1.2s infinite;
+        }
+}

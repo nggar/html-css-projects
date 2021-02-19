@@ -1,0 +1,99 @@
+.header {
+    
+
+    .material-icons {
+        display: none;
+        font-size: 4rem;
+        color: $white;
+
+        @include respond (phone) {
+              display: initial;
+              position: absolute;
+              cursor: pointer;
+        }
+    }
+    &__menu {
+        right: 0;
+        margin-right: 3rem;
+    }
+
+    &__nav {
+        grid-column: 2 / span 1;
+        justify-self: flex-end;
+        align-self: center;
+
+        @include respond (phone) {
+            transition: all .5s ease;
+            background-color: $color-green-2;
+
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100vh;
+            transform: translateX(100%);
+    
+            &__button-close {
+                  margin: 3rem;
+                  right: 0;
+            }
+        }
+        
+        &-items {
+            display: flex;
+            list-style: none;
+
+            @include respond(phone) {
+
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+
+                width: 100%;
+                height: 100%;
+                align-items: center;
+            }
+        }
+        &-links {
+            margin-left: 4rem;
+
+            @include respond(phone) {
+                margin: 3rem 0 0 3rem;
+            }
+        }
+        &-link:link,
+        &-link:visited {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: $white;
+            font-family: $font-secondary;
+            transition: all .5;
+
+            @include respond(phone) {
+                font-size: 2.2rem;
+                font-weight: 400;
+            }
+
+            &:hover {
+                color: $color-green-1;
+
+                @include respond(phone) {
+                    color: $white-light;
+                }
+            }
+        }
+    }
+    .active {
+        color: $color-green-1;
+
+        @include respond(phone) {
+            color: $white;
+        }
+    }
+}
+
+.show {
+    right: 0;
+    transform: translateX(0);
+}

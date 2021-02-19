@@ -1,0 +1,57 @@
+/* Logo Text */ 
+
+.logo-text {
+    font-family: $font-logo;
+    color: $white;
+}
+
+/* Section Headings */
+
+.heading-1 {
+    font-family: $font-title;
+    color: $black;
+
+    &--white {
+        color: $white;
+    }
+}
+
+/* Sub Headings */
+
+.heading-2 {
+    font-family: $font-primary;
+    color: $black;
+
+    &--light {
+        font-weight: 300;
+    }
+    &--med {
+        font-weight: 400;
+    }
+    &--bold {
+        font-weight: 600;
+    }
+    &--white {
+        color: $white;
+    }
+}
+
+/* Other Text on page */
+
+.body-text {
+    font-family: $font-secondary;
+    color: $black;
+
+    &--light {
+        font-weight: 300;
+    }
+    &--med {
+        font-weight: 500;
+    }
+    &--bold {
+        font-weight: 700;
+    }
+    &--white {
+        color: $white;
+    }
+}

@@ -1,0 +1,50 @@
+.promo {
+      grid-column: full-start / full-end;
+
+      display: grid;
+      grid-template-columns: repeat(3, minmax(max-content, 1fr));
+
+      background-image: url(../../images/bg-promotion.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      margin-bottom: 1rem;
+
+      &__wrapper {
+            grid-column: 2 / 4;
+            text-align: center;
+            padding: 5rem;
+      }
+
+      &__heading {
+            font-size: 4.5rem;
+
+            &--green {
+                  color: $color-green-2;
+            }
+      }
+
+      &__offer {
+            text-transform: uppercase;
+            color: darken($white, 20%);
+
+            p:nth-child(1) {
+                  font-size: 3rem;
+            }
+            p:nth-child(2) {
+                  font-size: 1.6rem;
+                  font-weight: 300;
+            }
+            p:nth-child(3) {
+                  font-size: 5rem;
+                  font-weight: 400;
+                  margin-bottom: 2rem;
+                  sup {
+                        font-size: 6rem;
+                        font-weight: 600;
+                        color: $white;
+                  }
+            }
+      }
+}
