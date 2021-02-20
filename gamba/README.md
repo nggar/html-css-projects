@@ -3,7 +3,7 @@
 
 <div align="center">
   <h2>
-    <a href="http://gamba.vercel.app/" target="_blank">Demo</a>
+    <a href="https://gamba.vercel.app/" target="_blank">Demo</a>
   </h2>
 </div>
 
