@@ -3,7 +3,7 @@
 
 <div align="center">
   <h2>
-    <a href="http://natour-snowy.vercel.app/" target="_blank">Demo</a>
+    <a href="https://natour-snowy.vercel.app/" target="_blank">Demo</a>
   </h2>
 </div>
 
@@ -30,7 +30,10 @@
 
 ## Features
 
-<font size="3">This application/site was created to improve my CSS skill such as custom grid layout using float, animations, using svg sprites, setting up a simple build process with NPM scripts, using SASS for CSS preprocessor, using BEM methodology for naming CSS classes, Responsive website design, build navigation menu using checkbox hack, custom styling radio button, and other advanced CSS properties.</font>
+<font size="3">This application/site was created to improve my CSS skills such as :
+  - custom grid layout using float, animations, using svg sprites, setting up a simple build process with NPM scripts 
+  - using SASS for CSS preprocessor, using BEM methodology for naming CSS classes, Responsive website design 
+  - build navigation menu using checkbox hack, custom styling radio button, and other advanced CSS properties.</font>
 
 ## Contact
 
