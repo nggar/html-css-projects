@@ -3,7 +3,7 @@
 
 <div align="center">
   <h2>
-    <a href="https://trillo-site.vercel.app/" target="_blank">Demo</a>
+    <a href="http://trillo-site.vercel.app/" target="_blank">Demo</a>
   </h2>
 </div>
 

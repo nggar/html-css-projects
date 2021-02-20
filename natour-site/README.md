@@ -3,7 +3,7 @@
 
 <div align="center">
   <h2>
-    <a href="https://natour-snowy.vercel.app/" target="_blank">Demo</a>
+    <a href="http://natour-snowy.vercel.app/" target="_blank">Demo</a>
   </h2>
 </div>
 
