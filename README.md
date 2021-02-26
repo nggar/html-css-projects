@@ -1,4 +1,4 @@
-# HTML/CSS projects
+# HTML/CSS/SASS
 
 Basics responsive websites and pages, using SASS as CSS prepocessor and BEM methodology for naming CSS classes
 
