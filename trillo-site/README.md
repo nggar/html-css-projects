@@ -3,7 +3,7 @@
 
 <div align="center">
   <h2>
-    <a href="http://trillo-site.vercel.app/" target="_blank">Demo</a>
+    <a href="https://trillo-site.vercel.app/" target="_blank">Demo</a>
   </h2>
 </div>
 
@@ -30,7 +30,10 @@
 
 ## Features
 
-<font size="3">This application/site was created to improve my CSS skill such as flexbox, using svg sprites, setting up a simple build process with NPM scripts, using SASS for CSS preprocessor, using BEM methodology for naming CSS classes, Responsive website design, and other advanced CSS properties.</font>
+<font size="3">This application/site was created to improve my CSS skills such as :
+  - flexbox, using svg sprites, setting up a simple build process with NPM scripts
+  - using SASS for CSS preprocessor, using BEM methodology for naming CSS classes
+  - Responsive website design, and other advanced CSS properties</font>
 
 ## Contact
 
