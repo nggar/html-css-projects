@@ -1,0 +1,96 @@
+/* Navbar */
+.navbar {
+      background-color: transparent;
+      padding: 2rem 0;
+      z-index: 5;
+
+      transition: all .5s ease;
+
+      .container {
+            padding: 0 1.5rem;
+      }
+
+      &__brand {
+            font-size: 3rem;
+            color: $white;
+            font-weight: 500;
+            text-transform: capitalize;
+
+            &:hover,
+            &:active,
+            &:visited {
+                  color: $white;
+            }
+      }
+
+      &__item {
+            margin-left: 4rem;
+
+            @include respond(md) {
+                  margin: 0;
+                  padding: .5rem 1.5rem;
+            }
+      }
+
+      &__link {
+            color: $white;
+            text-transform: capitalize;
+            font-size: 1.6rem;
+            font-weight: 400;
+            padding: .5rem 0;
+            position: relative;
+
+            &:hover,
+            &:visited {
+                  color: $white;
+            }
+
+            &::before {
+                  content: '';
+                  position: absolute;
+                  bottom: 0;
+                  right: 0;
+                  left: 0;
+                  height: 1px;
+                  background-color: currentColor;
+                  transition: all .5s ease;
+                  transform: scale(0);
+            }
+            
+      }
+
+      &__toggler {
+            background-color: lighten($dark-to-main-color, 10%);
+            box-shadow: $shadow-black-300;
+            height: 3.4rem;
+            width: 4.4rem;
+            padding: 0;
+            font-size: 1.7rem;
+            color: $white;
+      }
+
+      &__nav {
+            @include respond(md) {
+                  background-color: lighten($dark-to-main-color, 10%);
+                  box-shadow: $shadow-black-300;
+            }
+      }
+
+      &__shrink {
+            box-shadow: 0 1.5rem 1.5rem rgba($black, .1);
+            background-color: $main-color;
+            padding: 1rem 0;
+
+            .navbar__nav,
+            .navbar__toggler {
+                  @include respond(md) {
+                        background-color: $main-color;
+                  }
+            }
+      }
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+      transform: scale(1);
+}

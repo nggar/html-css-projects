@@ -1,0 +1,61 @@
+.footer {
+      background-color: $main-color;
+      padding: 5rem 0 0;
+
+      &__column {
+
+            @include respond(md) {
+                  margin-bottom: 3rem;
+            }
+
+            &__heading {
+                  font-size: 2rem;
+                  font-weight: 500;
+                  color: $white;
+                  margin: 0 0 2.5rem;
+                  text-transform: capitalize;
+            }
+
+            &__list {
+                  margin: 0;
+
+                  li {
+                        
+                        a {
+                              font-size: 1.6rem;
+                              font-weight: 300;
+                              color: rgba($white, .9);
+                              display: block;
+                              text-transform: capitalize;
+                              transition: all .5s ease;
+                              text-decoration: none;
+
+                              &:hover {
+                                    padding-left: .5rem;
+                              }
+                        }
+
+                        &:not(:last-child) {
+                              margin-bottom: 1rem;
+                        }
+                  }
+            }
+
+            &__paragraph {
+                  font-size: 1.6rem;
+                  font-weight: 300;
+                  color: rgba($white, .9);
+                  line-height: 2.6rem;
+                  margin: 0;
+            }
+      }
+
+      &__copyright {
+            padding: 2rem 0;
+            margin: 5rem 0 0;
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: rgba($white, .9);
+            border-top: 1px solid rgba($white, .2);
+      }
+}

@@ -1,0 +1,33 @@
+@mixin imgAnimated {
+      max-width: 25rem;
+      width: 100%;
+
+      box-shadow: $shadow-black-100;
+      border-radius: 3.2rem;
+      animation: bounceTop_01 3s ease infinite;
+}
+
+
+@mixin item {
+      box-shadow: $shadow-black-100;
+      margin: 1.5rem;
+      padding: 3rem;
+      border-radius: 1rem;
+      text-align: center;
+}
+
+@mixin respond($breakpoint) { 
+	@if $breakpoint == sm { 
+		@media only screen and (max-width: 601px){@content};
+	} 
+	@if $breakpoint == md { 
+        @media only screen and (max-width: 901px){@content};
+    } 
+	@if $breakpoint == lg { 
+        @media only screen and (max-width: 1200px){@content};
+    } 
+	@if $breakpoint == xl { 
+        @media only screen and (min-width: 1800px){@content};
+      } 
+}
+

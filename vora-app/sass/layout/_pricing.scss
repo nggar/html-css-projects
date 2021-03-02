@@ -1,0 +1,95 @@
+.price {
+
+      &__card {
+            box-shadow: $shadow-black-100;
+            border-radius: 1rem;
+            
+            @include respond (md) {
+                  margin-bottom: 3rem;
+            }
+      }
+
+      &__heading {
+            padding: 2rem 3rem;
+            border-bottom: 1px solid $black-alpha-100;
+
+            &__main {
+                  text-align: center;
+                  font-size: 3rem;
+                  color: $black-900;
+                  font-weight: 600;
+                  text-transform: capitalize;
+                  margin: 0;
+            }
+      }
+
+      &__pricing {
+            padding: 4rem 3rem;
+            display: flex;
+            justify-content: center;
+            line-height: .7;
+
+            &__currency {
+                  font-size: 1.6rem;
+                  font-weight: 300;
+                  color: $black-400;
+                  margin-right: .5rem;
+                  align-self: flex-start;
+            }
+            &__amount {
+                  font-size: 8rem;
+                  font-weight: 700;
+                  color: $main-color;
+            }
+            &__duration {
+                  font-size: 1.4rem;
+                  font-weight: 300;
+                  color: $black-400;
+                  margin-right: .5rem;
+                  align-self: flex-end;
+                  text-transform: uppercase;
+            }
+      }
+
+      &__body {
+            padding: 0 3rem;
+
+            ul {
+
+                  li {
+                        font-size: 1.6rem;
+                        font-weight: 300;
+                        color: $black-400;
+                        padding: 1rem 0 1rem 3rem;
+                        border-bottom: 1px solid $black-alpha-100;
+                        line-height: 2.6rem;
+
+                        position: relative;
+
+                        i {
+                              color: $main-color;
+                              position: absolute;
+                              left: 0;
+                              top: 1.4rem;
+                        }
+
+                        &:last-child {
+                              border-bottom: 0;
+                        }
+                  }
+            }
+      }
+
+      &__footer {
+            padding: 2rem 3rem 3rem;
+            text-align: center;
+
+            &__btn {
+                  box-shadow: $shadow-black-100;
+
+                  &:focus {
+                        box-shadow: $shadow-black-100;
+                  }
+            }
+      }
+}

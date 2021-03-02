@@ -1,0 +1,69 @@
+.fun-fact {
+      background-color: $black-100;
+
+      // img
+      &__img {
+            @include imgAnimated;
+
+            @include respond(md) {
+                  margin-bottom: 4rem;
+            }
+      }
+
+
+      // title
+      &__title-wrapper {
+            margin-bottom: 2rem;
+      }
+      &__title {
+            text-align: left;
+
+            @include respond (md) {
+                  text-align: center;
+            }
+      }
+
+
+      // info
+      &__paragraph {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            color: $black-400;
+            margin: 0 0 1.5rem;
+            font-weight: 300;
+      }
+
+      &__item {
+            @include item;
+            padding: 4rem 3rem;
+
+            &--1 {     
+                  background-color: $color-1;
+            }
+            &--2 {
+                  background-color: $color-2;
+            }
+            &--3 {
+                  background-color: $color-3;
+            }
+            &--4 {
+                  background-color: $main-color;
+            }
+
+            &__value {
+                  font-size: 4rem;
+                  font-weight: 700;
+                  color: $white;
+                  margin: 0 0 .5rem;
+            }
+            &__meta {
+                  font-size: 1.6rem;
+                  text-transform: uppercase;
+                  font-weight: 400;
+                  margin: 0;
+                  line-height: 2.6rem;
+                  color: $white;
+                  display: block;
+            }
+      }
+}

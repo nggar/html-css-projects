@@ -1,0 +1,75 @@
+.faq {
+
+      &__item {
+
+            &:not(:last-child) {
+                  margin-bottom: 2rem;
+            }
+
+            // heading
+            &__heading-box {
+                  box-shadow: $shadow-black-100;
+                  padding: 2rem 5rem 2rem 3rem;
+                  cursor: pointer;
+                  transition: all .5s ease;
+                  position: relative;
+                  border-radius: 3px;
+
+                  &:not(.collapsed) {
+                        background-color: $main-color;
+                        box-shadow: none;
+
+                        & > .faq__item__heading {
+                              color: $white;
+                        }
+
+                        &::before {
+                              content: '\f068';
+                              color: $white;
+                        }
+                  }
+
+                  &::before {
+                        content: '\f067';
+                        font-family: 'Font Awesome 5 free';
+                        font-weight: 900;
+
+                        position: absolute;
+                        height: 3rem;
+                        width: 3rem;
+                        right: 1rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 1.6rem;
+                        line-height: 3rem;
+                        color: $black-400;
+                        text-align: center;
+
+                        transition: all .5s ease;
+                  }
+            }
+
+            &__heading {
+                  font-size: 1.8rem;
+                  font-weight: 500;
+                  color: $black-400;
+                  margin: 0;
+                  transition: all .5s ease;
+            }
+
+
+            // body, paragraph
+            &__body {
+                  padding: 2rem 3rem;
+                  background-color: $black-100;
+
+                  &__text {
+                        font-size: 1.6rem;
+                        font-weight: 300;
+                        color: $black-400;
+                        line-height: 2.6rem;
+                        margin: 0;
+                  }
+            }
+      }
+}

@@ -1,0 +1,35 @@
+@keyframes spin_01 {
+      0% {
+            transform: rotate(0deg);
+      }
+      100% {
+            transform: rotate(360deg);
+      }
+}
+
+@keyframes bounceTop_01 {
+      0% {
+            transform: translateY(-3rem);
+      }
+      50% {
+            transform: translateY(0);
+      }
+      100% {
+            transform: translateY(-3rem);
+      }
+}
+
+@keyframes pulse_01 {
+      0% {
+            transform: scale(.95);
+            box-shadow: 0 0 0 0 rgba($white, .9);
+      }
+      70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 1.2rem rgba($white, 0);
+      }
+      100% {
+            transform: scale(.95);
+            box-shadow: 0 0 0 0 rgba($white, 0);
+      }
+}

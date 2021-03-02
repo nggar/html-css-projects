@@ -1,0 +1,38 @@
+.btn {
+      padding: 1.2rem 3rem;
+      border: none;
+      border-radius: 3rem;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      transition: all .5s ease;
+      box-shadow: $shadow-black-300;
+      font-weight: 500;
+
+      &:active {
+            transform: translateY(.3rem);
+      }
+      &:focus {
+            box-shadow: $shadow-black-300;
+      }
+
+      &--white {
+
+            background-color: $white;
+            color: $main-color;
+
+            &:hover {
+                  color: $white;
+                  background-color: $main-color;
+            }
+      }
+
+      &--purple {
+            background-color: $main-color;
+            color: $white;
+
+            &:hover {
+                  color: $main-color;
+                  background-color: $white;
+            }
+      }
+}

@@ -1,0 +1,12 @@
+.app {
+
+      &__item {
+            margin: 1.5rem;
+      }
+      &__img {
+            width: 100%;
+            max-width: 25rem;
+            display: block;
+            margin: auto;
+      }
+}

@@ -1,0 +1,38 @@
+
+* {
+      margin: 0;
+      padding: 0;
+      outline: none !important;
+      box-sizing: border-box;
+}
+
+html {
+      font-size: 62.5%; // set 1rem = 10px
+
+      @include respond(md) {
+            font-size: 50%;
+      }
+}
+
+body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      overflow-x: hidden;
+      background-color: $white;
+      line-height: 1.5;
+}
+
+img {
+      max-width: 100%;
+      vertical-align: middle;
+}
+
+ul {
+      list-style: none;
+}
+
+::selection {
+      color: $white;
+      background-color: $main-color;
+}

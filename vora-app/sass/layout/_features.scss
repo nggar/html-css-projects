@@ -1,0 +1,132 @@
+.features {
+
+      &__item {
+            @include item;
+
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+
+            // feature__item before, after
+            &::before, 
+            &::after {
+                  content: '';
+                  position: absolute;
+                  z-index: -1;
+                  border-radius: 50%;
+                  transition: all .5s ease;
+                  opacity: 0;
+
+                  @include respond (md) {
+                        opacity: 1;
+                  }
+            }
+
+            &::before {
+                  height: 2rem;
+                  width: 2rem;
+                  background-color: $color-1;
+                  left: -2rem;
+                  top: 40%;
+
+                  @include respond (md) {
+                        left: 1rem;
+                  }
+            }
+
+            &::after {
+                  height: 3rem;
+                  width: 3rem;
+                  background-color: $color-2;
+                  right: -3rem;
+                  top: 80%;
+
+                  @include respond (md) {
+                        right: -1.5rem;
+                  }
+            }
+
+            // feature__item hover
+            &:hover::before {
+                  left: 1rem;
+                  opacity: 1;
+            }
+            &:hover::after {
+                  right: -1.5rem;
+                  opacity: 1;
+            }
+
+            &:hover {
+                  .features__item__icon-box::before {
+                        left: 0;
+                        border-radius: 50%;
+                        opacity: 1;
+                  }
+
+                  .features__item__icon-box {
+                        color: $white;
+                        font-size: 2rem;
+                  }
+            }
+
+            // icon style
+            &__icon-box {
+                  height: 6rem;
+                  width: 6rem;
+                  text-align: center;
+                  margin: 0 auto 3rem;
+                  font-size: 3rem;
+                  color: $main-color;
+
+                  position: relative;
+                  z-index: 1;
+                  transition: all .5s ease;
+
+                  &::before {
+                        content: '';
+                        position: absolute;
+                        left: 100%;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $main-color;
+                        transition: all .5s ease;
+                        z-index: -1;
+                        opacity: 0;
+
+                        @include respond (md) {
+                              opacity: 1;
+                              left: 0;
+                              border-radius: 50%;
+                        }
+                  }
+            }
+
+            &__icon {
+                  line-height: 6rem;
+
+                  @include respond(md) {
+                        color: $white;
+                        font-size: 2rem;
+                  }
+                  
+            }
+
+            // text style
+            &__title {
+                  font-size: 2.2rem;
+                  margin-bottom: 2rem;
+                  color: $black-900;
+                  font-weight: 500;
+                  text-transform: capitalize;
+            }
+
+            &__paragraph {
+                  font-size: 1.6rem;
+                  line-height: 2.6rem;
+                  font-weight: 300;
+                  color: $black-400;
+                  margin: 0 0 1.5rem;
+            }
+      }
+}

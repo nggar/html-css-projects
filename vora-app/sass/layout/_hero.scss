@@ -1,0 +1,131 @@
+.hero {
+      min-height: 100vh;
+      padding: 15rem 0;
+      background-color: $main-to-dark-color;
+      border-radius: 0 0 20rem 0;
+      overflow-x: hidden;
+
+      position: relative;
+      z-index: 1;
+
+      // Left Side
+      &__text {
+            @include respond(md) {
+                  margin-bottom: 10rem;
+            }
+      }
+      &__heading {
+            color: $white;
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+
+            @include respond(sm) {
+                  font-size: 3.8rem;
+            }
+      }
+      &__paragraph {
+            color: $white;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            font-weight: 300;
+      }
+      &__btn {
+            margin-top: 4rem;
+
+            &--1 {
+                  margin-right: 3rem;
+            }
+            &--2 {
+                  height: 5rem;
+                  width: 5rem;
+                  padding: 0;
+                  font-size: 1.6rem;
+                  animation: pulse_01 2s ease infinite;
+
+                  i {
+                        line-height: 5rem;
+                  }
+
+                  &:hover {
+                        animation: none;
+                        box-shadow: $shadow-black-300;
+                  }
+            }
+      }
+
+      // Right Side
+      &__img-box {
+            position: relative;
+      }
+
+      &__img {
+            @include imgAnimated;
+      }
+
+      &__circle {
+            position: absolute;
+            height: 40rem;
+            width: 40rem;
+            z-index: 1;
+            border: 1px solid rgba($white, .2);
+            border-radius: 50%;
+
+            @include respond(md) {
+                  height: 32rem;
+                  width: 32rem;
+            }
+
+            // centering absolute position
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &::before {
+                  content: '';
+                  position: absolute;
+                  height: 6rem;
+                  width: 6rem;
+                  background-color: rgba($white, .4);
+                  border-radius: 50%;
+                  left: 3rem;
+                  top: 3rem;
+                  transform-origin: 17rem 17rem;
+                  animation: spin_01 10s linear infinite;
+
+                  @include respond(md) {
+                        top: 1.8rem;
+                        left: 1.8rem;
+                        transform-origin: 14.2rem 14.2rem;
+                  }
+            }
+      }
+
+      // icons effect
+      &__effect {
+            position: absolute;
+            z-index: -1;
+
+            &--1 {
+                  left: 20%;
+                  top: 20%;
+                  font-size: 2rem;
+                  color: $color-2;
+                  animation: spin_01 5s linear infinite;
+            }
+            &--2 {
+                  right: 5%;
+                  top: 10%;
+                  font-size: 2.5rem;
+                  color: rgba($white, .5);
+                  animation: spin_01 7s linear infinite;
+            }
+            &--3 {
+                  left: 5%;
+                  bottom: 30%;
+                  font-size: 2.5rem;
+                  color: $color-3;
+                  animation: bounceTop_01 3s linear infinite;
+            }
+      }
+}

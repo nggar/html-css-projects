@@ -1,0 +1,30 @@
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// base
+@import "./base/base";
+@import "./base/animations";
+@import "./base/utilities";
+
+// components
+@import "./component/button";
+@import "./component/carousel";
+@import "./component/popup";
+@import "./component/preloader";
+
+// layout
+@import "./layout/navigation";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/fun-facts";
+@import "./layout/screenshots";
+@import "./layout/download";
+@import "./layout/how-it-work";
+@import "./layout/testimonials";
+@import "./layout/pricing";
+@import "./layout/team";
+@import "./layout/faq";
+@import "./layout/contact";
+@import "./layout/footer";
+

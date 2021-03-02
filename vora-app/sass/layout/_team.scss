@@ -1,0 +1,43 @@
+.team {
+      background-color: $black-100;
+
+      &__item {
+            margin: 1.5rem;
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: $shadow-black-100;
+      
+
+            &__img-box {
+                  
+                  height: 400px;
+                  border-radius: 3px;
+                  overflow: hidden;
+
+                  @include respond (sm) {
+                        height: auto;
+                  }
+            }
+            &__img {
+                  height: 100%;
+                  width: 100%;
+                  object-fit: cover;
+            }
+
+            &__name {
+                  font-size: 2rem;
+                  color: $black-900;
+                  font-weight: 500;
+                  margin: 1.5rem 0 .5rem;
+                  text-transform: capitalize;
+            }
+
+            &__job {
+                  display: block;
+                  font-size: 1.6rem;
+                  font-weight: 300;
+                  color: $black-400;
+                  text-transform: capitalize;
+            }
+      }
+}
