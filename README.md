@@ -1,6 +1,6 @@
 # Responsive Web Design Projects
 
-### HTML | CSS | SASS
+### HTML, CSS, SASS, Bem methodology
 
 - [**"Vora, Mobile App Template"**](https://github.com/nggar/html-css-projects/tree/main/vora-app)
 
