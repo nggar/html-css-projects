@@ -1,6 +1,6 @@
 # Responsive Web Design Projects
 
-### HTML | CSS | SASS | Bootstrap | Tailwind
+### HTML | CSS | SASS
 
 - [**"Vora, Mobile App Template"**](https://github.com/nggar/html-css-projects/tree/main/vora-app)
 
