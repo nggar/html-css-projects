@@ -10,6 +10,9 @@
     @include respond(tab-port) {
         grid-template-rows: min-content repeat(6, 20rem);
     }
+    @include respond(phone) {
+        grid-template-rows: min-content repeat(6, 15rem);
+    }
 
     row-gap: 2rem;
     column-gap: 3rem;
@@ -83,11 +86,10 @@
         }
 
         &--small {
-            width: 40rem;
+            width: 250px;
             margin-right: 1rem;
 
             @include respond(tab-port) {
-                width: 45rem;
             }
         }
     }

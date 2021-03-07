@@ -94,7 +94,7 @@ body {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  transition: all .3s; }
+  transition: all 0.3s; }
   @media only screen and (max-width: 37.5em) {
     .btn {
       font-size: 1.6rem; } }
@@ -115,9 +115,6 @@ body {
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: 600; }
-  @media only screen and (max-width: 56.25em) {
-    .btn-text {
-      font-size: 1.2rem; } }
 
 .header {
   grid-column: full-start / full-end;
@@ -638,12 +635,22 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .promo {
+      grid-template-columns: repeat(4, minmax(max-content, 1fr)); } }
   .promo__wrapper {
     grid-column: 2 / 4;
     text-align: center;
     padding: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .promo__wrapper {
+        grid-column: 2 / -1;
+        padding: 5rem 0; } }
   .promo__heading {
     font-size: 4.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .promo__heading {
+        font-size: 4rem; } }
     .promo__heading--green {
       color: #44bd32; }
   .promo__offer {
@@ -674,6 +681,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .blog {
       grid-template-rows: min-content repeat(6, 20rem); } }
+  @media only screen and (max-width: 37.5em) {
+    .blog {
+      grid-template-rows: min-content repeat(6, 15rem); } }
   .blog__heading {
     font-size: 6rem;
     grid-column: 1 / -1;
@@ -723,11 +733,8 @@ body {
         .blog__img-box--1 {
           grid-column: 1 / -1; } }
     .blog__img-box--small {
-      width: 40rem;
+      width: 250px;
       margin-right: 1rem; }
-      @media only screen and (max-width: 56.25em) {
-        .blog__img-box--small {
-          width: 45rem; } }
   .blog__img {
     width: 100%;
     height: 100%;
@@ -816,6 +823,11 @@ body {
 .footer__contact {
   justify-self: center;
   grid-column: 2 / 3; }
+  @media only screen and (max-width: 37.5em) {
+    .footer__contact {
+      grid-column: 2 / 4;
+      justify-self: flex-start;
+      margin-bottom: 3rem; } }
   .footer__contact > * {
     color: #d9d9d9; }
   .footer__contact > :first-child {
@@ -834,6 +846,10 @@ body {
   display: grid;
   grid-template-columns: repeat(2, min-content);
   grid-gap: 0.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer__gallery {
+      grid-column: 2 / 4;
+      justify-self: flex-start; } }
   .footer__gallery__heading {
     grid-column: 1 / -1;
     font-size: 2.2rem;

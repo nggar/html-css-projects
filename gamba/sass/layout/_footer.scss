@@ -103,6 +103,12 @@
         justify-self: center;
         grid-column: 2 / 3;
 
+        @include respond(phone) {
+            grid-column: 2 / 4;
+            justify-self: flex-start;
+            margin-bottom: 3rem;
+        }
+
         & > * {
             color: darken($white, 15%);
         }
@@ -124,6 +130,11 @@
     &__gallery {
         grid-column: 3 / 4;
         justify-self: center;
+
+        @include respond(phone) {
+            grid-column: 2 / 4;
+            justify-self: flex-start;
+        }
 
         display: grid;
         grid-template-columns: repeat(2, min-content);
