@@ -1,15 +1,13 @@
 .header {
-    
-
     .material-icons {
         display: none;
         font-size: 4rem;
         color: $white;
 
-        @include respond (phone) {
-              display: initial;
-              position: absolute;
-              cursor: pointer;
+        @include respond(phone) {
+            display: initial;
+            position: absolute;
+            cursor: pointer;
         }
     }
     &__menu {
@@ -22,8 +20,8 @@
         justify-self: flex-end;
         align-self: center;
 
-        @include respond (phone) {
-            transition: all .5s ease;
+        @include respond(phone) {
+            transition: all 0.5s ease;
             background-color: $color-green-2;
             /* backdrop-filter: blur(1rem); */
 
@@ -34,16 +32,15 @@
             width: 80%;
             height: 100vh;
             transform: translateX(100%);
-    
+
             &__button-close {
-                  margin: 3rem;
-                  right: 0;
+                margin: 3rem;
+                right: 0;
             }
         }
-        
+
         &-items {
             display: flex;
-            
 
             @include respond(phone) {
                 flex-direction: column;
@@ -72,10 +69,10 @@
             font-size: 1.5rem;
             color: $white;
             font-family: $font-secondary;
-            transition: all .5;
+            transition: all 0.5;
 
             @include respond(phone) {
-                font-size: 2.4rem;
+                font-size: 2rem;
                 font-weight: 400;
                 color: $white;
             }

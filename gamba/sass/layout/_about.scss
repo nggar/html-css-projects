@@ -1,85 +1,81 @@
 .about {
-      grid-column: center-start / center-end;
+    grid-column: center-start / center-end;
 
-      display: grid;
-      grid-template-columns: repeat(3, minmax(min-content, 1fr));
-      row-gap: 2rem;
-      margin-bottom: 12rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    row-gap: 2rem;
+    margin-bottom: 12rem;
 
-      align-items: center;
-      text-align: center;
+    align-items: center;
+    text-align: center;
 
-      @include respond (tab-port) {
-            grid-template-columns: repeat(2, minmax(min-content, 1fr));
-            margin-bottom: 2rem;
-            column-gap: 2rem;
-      }
-      @include respond (phone) {
-            grid-template-columns: repeat(1, minmax(min-content, 1fr));
-      }
+    @include respond(tab-port) {
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+        margin-bottom: 2rem;
+        column-gap: 2rem;
+    }
+    @include respond(phone) {
+        grid-template-columns: repeat(1, minmax(min-content, 1fr));
+    }
 
-      // welcome to gamba
-      &__title {
-            font-size: 5rem;
+    // welcome to gamba
+    &__title {
+        font-size: 5rem;
 
-            grid-column: 1 / -1;
-            justify-self: center;
-      }
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
 
-      // fruit of heart
-      &__img {
-            grid-column: 2 / 3;
-            grid-row: 2 / 4;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+    // fruit of heart
+    &__img {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
 
-            @include respond (tab-port) {
-                  display: none;
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+
+    // overall style for each item
+    &__info {
+        padding: 0 5rem;
+
+        // sprites
+        &-icon {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+
+        // info headings
+        &__main-heading {
+            font-size: 1.8rem;
+        }
+
+        // sub text
+        &__main-text {
+            font-size: 1.5rem;
+        }
+
+        // 100% Natural // Organic Products
+        &--1,
+        &--3 {
+            grid-column: 1 / 2;
+        }
+
+        // Always Fresh // Best Quality
+        &--2,
+        &--4 {
+            grid-column: 3 / 4;
+
+            @include respond(tab-port) {
+                grid-column: 2 / 3;
             }
-      }
-
-      // overall style for each item
-      &__info {
-            padding: 0 5rem;
-
-            @include respond (phone) {
-                  padding: 0 10rem;
+            @include respond(phone) {
+                grid-column: 1 / 2;
             }
-
-            // sprites
-            &-icon {
-                  width: 4.5rem;
-                  height: 4.5rem;
-            }
-
-            // info headings
-            &__main-heading {
-                  font-size: 1.8rem;
-            }
-
-            // sub text
-            &__main-text {
-                  font-size: 1.5rem;
-            }
-
-            // 100% Natural // Organic Products
-            &--1, 
-            &--3 {
-                  grid-column: 1 / 2;
-            }
-
-            // Always Fresh // Best Quality
-            &--2,
-            &--4 {
-                  grid-column: 3 / 4;
-
-                  @include respond (tab-port) {
-                        grid-column: 2 / 3;
-                  }
-                  @include respond (phone) {
-                        grid-column: 1 / 2;
-                  }
-            }
-      }
+        }
+    }
 }
