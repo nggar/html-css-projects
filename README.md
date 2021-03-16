@@ -1,6 +1,6 @@
 # Responsive Web Design Projects
 
-### HTML, CSS, SCSS, Bem
+### HTML / CSS
 
 - [**"Gamba, Website for Selling Organic Products"**](https://github.com/nggar/html-css-projects/tree/main/gamba)
 
